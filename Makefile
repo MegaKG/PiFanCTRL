@@ -17,6 +17,7 @@ deb:
 	
 	cp -v $(SRC)/FanCTRL.py $(BUILD)/FanCTRL-$(VERSION)/usr/sbin/
 	cp -v $(SRC)/FanCTRL.service $(BUILD)/FanCTRL-$(VERSION)/etc/systemd/system/
+	cp -v $(CONFIG)/FanConfig.json $(BUILD)/FanCTRL-$(VERSION)/etc/
 
 	dpkg-deb --build $(BUILD)/FanCTRL-$(VERSION)
 	cp -v $(BUILD)/FanCTRL-$(VERSION).deb ./
