@@ -1,0 +1,12 @@
+[Unit]
+Description=PWM Fan Control
+After=multi-user.target
+
+[Service]
+Type=simple
+User=root
+ExecStart= /usr/bin/python3 /usr/sbin/FanCTRL.py /etc/FanConfig.json
+Restart=always
+
+[Install]
+WantedBy=default.target

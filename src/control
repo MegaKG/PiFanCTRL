@@ -1,0 +1,8 @@
+Package: FanCTRL
+Version: 1.0-0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: MegaKG <megakg@outlook.com>
+Homepage: https://github.com/MegaKG/PiFanCTRL
+Description: A PWM Fan Controller
